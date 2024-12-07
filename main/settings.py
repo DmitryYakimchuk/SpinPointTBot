@@ -8,7 +8,7 @@ ENV_FILE_PATH = str(Path(__file__).resolve().parent.parent / ".env")
 class Settings(BaseSettings):
 
     APP_NAME: str = "tg_bot"
-    TG_TOKEN: str
+    TG_TOKEN: str = "dummy_token_for_mypy"
 
     model_config = SettingsConfigDict(env_file=ENV_FILE_PATH, env_file_encoding="utf-8")
 
