@@ -17,7 +17,7 @@ rating_mock_list: list[str] = []
 for i in range(2, 11):
     rating = {
         "id": i,
-        "user_id": f"mock_rating_user_id_{i}",
+        "user_id": str(uuid4()),
         "date": (dt.datetime.now(tz=dt.UTC) + dt.timedelta(days=(i - 10))).isoformat(),
         "value": 100.5 + i * 10,
     }
