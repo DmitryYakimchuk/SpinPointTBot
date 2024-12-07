@@ -12,6 +12,16 @@ pydantic-settings = "^2.6.1"
 aiogram = "^3.15.0"
 aiohttp = "^3.10"
 
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.10.0"
+isort = "^5.13.2"
+black = "^24.4.2"
+types-python-dateutil = "^2.9.0.20240316"
+types-sqlalchemy-utils = "^1.1.0"
+pytest = "^8.3.2"
+pyproject-flake8 = "^7.0.0"
+pre-commit = "^4.0.1"
+flake8-pyproject = "^1.2.3"
 
 [build-system]
 requires = ["poetry-core"]
