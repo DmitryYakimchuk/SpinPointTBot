@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "spinpointtbot"
+version = "0.1.0"
+description = ""
+authors = ["Dzmitry Yakimchuk <dzmitry.email@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.7.1"
+pydantic-settings = "^2.6.1"
+aiogram = "^3.15.0"
+aiohttp = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
