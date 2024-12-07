@@ -26,3 +26,54 @@ flake8-pyproject = "^1.2.3"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+# MYPY section
+[tool.mypy]
+exclude = [
+    ".env",
+    ".venv",
+    ".git",
+    "__pycache__"
+]
+plugins = [
+    "sqlalchemy.ext.mypy.plugin",
+    "pydantic.mypy",
+]
+
+# BLACK section
+[tool.black]
+line_length = 88
+
+# ISORT section
+[tool.isort]
+profile = "black"
+line_length = 88
+skip = [
+    ".venv",
+    ".git",
+    "__pycache__",
+    "site-packages"
+]
+
+# FLAKE8 section
+[tool.flake8]
+max-line-length = 88
+exclude = [
+    ".venv/*",
+    ".git",
+    "__pycache__",
+    "site-packages"
+]
+
+extend-ignore = [
+    "E800",
+    "E501",
+    "E203",
+]
+
+# pyproject.toml
+[tool.pytest.ini_options]
+markers = [
+    "integration: marks integration tests",
+    "unit: marks unit tests"
+]
