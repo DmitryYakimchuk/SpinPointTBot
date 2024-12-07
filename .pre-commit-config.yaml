@@ -38,6 +38,7 @@ repos:
                                   types-python-dateutil,
                                   types-PyYAML,
                                   pydantic-settings,
+                                  pydantic_extra_types,
                                   pytest,
                                   aiogram,
         ]
