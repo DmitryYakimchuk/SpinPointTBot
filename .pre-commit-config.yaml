@@ -39,5 +39,6 @@ repos:
                                   types-PyYAML,
                                   pydantic-settings,
                                   pytest,
+                                  aiogram,
         ]
         args: [--strict]
