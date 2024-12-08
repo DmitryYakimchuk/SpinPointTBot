@@ -18,7 +18,7 @@ class User(BaseSchema):
     user_id: UUID4
     name: str
     email: EmailStr
-    telegram_id: str
+    telegram_id: int
     phone: PhoneNumber
     gender: Gender
     birthday: AwareDatetime | None
